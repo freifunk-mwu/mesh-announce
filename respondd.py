@@ -132,6 +132,8 @@ if __name__ == "__main__":
 
     if args.domain_code:
         env['domain_code'] = args.domain_code
+    else:
+        env['domain_code'] = ''
 
     if_threads = {}
     for iface in args.mcast_ifaces:
